@@ -1,15 +1,14 @@
 from tkinter import *
 from tkinter import messagebox
 from tkinter.filedialog import askopenfilename
-from PIL import ImageTk, Image
 import tkinter.font as font
 from ibm_watson import VisualRecognitionV3 as vr
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from tkinterhtml import HtmlFrame
 
-authenticator = IAMAuthenticator("XvI2hl5-l8I4FPh0fq7hjkwGuFnq3CACXQA5rqURIxpZ")
+authenticator = IAMAuthenticator("<API Key>")
 vr1=vr(version="2018-03-19",authenticator=authenticator)
-vr1.set_service_url("https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/a3b1b291-4ab9-4c27-8c22-9916bff1063b")
+vr1.set_service_url("<Service URL>")
 
 def urlclassify():
     try:
