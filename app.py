@@ -6,9 +6,9 @@ from ibm_watson import VisualRecognitionV3 as vr
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from tkinterhtml import HtmlFrame
 
-authenticator = IAMAuthenticator("<API Key>")
+authenticator = IAMAuthenticator("API Key") #paste your API Key
 vr1=vr(version="2018-03-19",authenticator=authenticator)
-vr1.set_service_url("<Service URL>")
+vr1.set_service_url("Service URL") #paste your service URL
 
 def urlclassify():
     try:
