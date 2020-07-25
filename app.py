@@ -4,7 +4,7 @@ from tkinter.filedialog import askopenfilename
 import tkinter.font as font
 from ibm_watson import VisualRecognitionV3 as vr
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
-from tkinterhtml import HtmlFrame   #Enter pip install tkinterhtml to install the python library
+from tkinterhtml import HtmlFrame   
 
 authenticator = IAMAuthenticator("API Key") #paste your API Key
 vr1=vr(version="2018-03-19",authenticator=authenticator)
